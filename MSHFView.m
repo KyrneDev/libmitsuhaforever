@@ -78,7 +78,7 @@ BOOL boost;
 
 - (void)start {
   NSString *identifier = [[NSProcessInfo processInfo] processName];
-  if ([identifier isEqualToString:@"Music"] || [identifier isEqualToString:@"Spotify"] || [[NSClassFromString(@"SBMediaController") sharedInstance] isPlaying]) {
+  if ([identifier isEqualToString:@"Music"] || [identifier isEqualToString:@"Spotify"] || [identifier isEqualToString:@"SoundCloud"] || [[NSClassFromString(@"SBMediaController") sharedInstance] isPlaying]) {
 	    [self.audioSource start];
       [self.displayLink setPaused:false];
   }

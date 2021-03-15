@@ -111,7 +111,7 @@ const int one = 1;
               break;
             }
 
-            if (len > 8192 || len < 0) {
+            if (len > 16384 || len < 0) {
               close(self->connfd);
               break;
             }
